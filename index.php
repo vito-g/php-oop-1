@@ -29,7 +29,7 @@ class Vino {
 }
 //End Creazione Classe
 
-//Creazione Oggetti
+//Creazione Oggetti di Classe Vino
 $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 // echo $platone->nazione . '<br>';
 // echo $platone->regione . '<br>';
@@ -46,11 +46,14 @@ $mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco'
 
 $felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
 
+$mistico = new Vino('Mistico', 'Italia', 'Puglia', 'Castellaneta Marina', 'IGP Salento', 'Vino Rosso', 'Primitivo');
 
+$niuruMaru = new Vino('Niuru Maru', 'Italia', 'Puglia', 'Castellaneta Marina', 'IGP Salento', 'Vino Rosso', 'Negroamaro');
 
+$verdecaSetteLune = new Vino('Verdeca Sette Lune', 'Italia', 'Puglia','Castellaneta Marina', 'IGP Salento', 'Vino Bianco', 'Verdeca');
 
-
-//End Creazione Oggetti
+$grecoBianco = new Vino('Greco Bianco', 'Italia', 'Puglia','Castellaneta Marina', 'IGP Salento', 'Vino Bianco', 'Greco Bianco');
+//End Creazione Oggetti di Classe Vino
 
 //Creazione Nuova Classe
 class AziendaVinicola {
