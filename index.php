@@ -29,7 +29,7 @@ class Vino {
 }
 //End Creazione Classe
 
-//Creazione Oggetti di Classe Vino
+//Creazione Oggetti di Classe Vino  (attraverso la FX 'costruttore')
 $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 // echo $platone->nazione . '<br>';
 // echo $platone->regione . '<br>';
@@ -71,7 +71,7 @@ class AziendaVinicola {
 }
 //End Creazione Nuova Classe
 
-//Creazione Oggetto Relativo a Classe AziendaVinicola attraverso la FX 'costruttore'
+//Creazione Oggetto di Classe AziendaVinicola (attraverso la FX 'costruttore')
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
 
 //Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola' attraverso la FX 'addVino'
