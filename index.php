@@ -23,6 +23,20 @@ class Vino {
   }
 }
 
+class AziendaVinicola {
+  public $nome;
+
+  public $vini = [];
+
+  public function __construct($nome) {
+    $this->nome = $nome;
+  }
+
+  public function addVino($vino) {
+    $this->vini[] = $vino;
+  }
+}
+
 $Platone = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 echo $Platone->nazione . '<br>';
 echo $Platone->regione . '<br>';
