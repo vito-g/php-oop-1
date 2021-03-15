@@ -85,5 +85,9 @@ var_dump($vinicolaAlbano);
 $lArchetipo = new AziendaVinicola('Azienda Vinicola l\'Archetipo');
 //Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola l'Archetipo' di Classe 'AziendaVinicola' (attraverso la FX 'addVino')
 $lArchetipo->addVino($mistico);
+$lArchetipo->addVino($niuruMaru);
+$lArchetipo->addVino($verdecaSetteLune);
+$lArchetipo->addVino($grecoBianco);
+
 //Stampa a schermo
 var_dump($lArchetipo);
