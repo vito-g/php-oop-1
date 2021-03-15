@@ -2,6 +2,9 @@
 
 //Creazione Classe
 class Vino {
+
+  public $nome;
+
   public $nazione;
 
   public $regione;
@@ -14,7 +17,8 @@ class Vino {
 
   public $vitigno;
 
-  public function __construct($nazione, $regione, $zonaProduzione, $indicazione, $tipologia, $vitigno) {
+  public function __construct($nome, $nazione, $regione, $zonaProduzione, $indicazione, $tipologia, $vitigno) {
+    $this->nome = $nome;
     $this->nazione = $nazione;
     $this->regione = $regione;
     $this->zonaProduzione = $zonaProduzione;
@@ -26,7 +30,7 @@ class Vino {
 //End Creazione Classe
 
 //Creazione Oggetti
-$Platone = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
+$Platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 echo $Platone->nazione . '<br>';
 echo $Platone->regione . '<br>';
 echo $Platone->zonaProduzione . '<br>';
@@ -36,7 +40,7 @@ echo $Platone->vitigno . '<br>';
 
 echo '<br>';
 
-$Taras = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
+$Taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
 echo $Taras->nazione . '<br>';
 echo $Taras->regione . '<br>';
 echo $Taras->zonaProduzione . '<br>';
@@ -46,7 +50,7 @@ echo $Taras->vitigno . '<br>';
 
 echo '<br>';
 
-$Mediterraneo = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
+$Mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
 echo $Mediterraneo->nazione . '<br>';
 echo $Mediterraneo->regione . '<br>';
 echo $Mediterraneo->zonaProduzione . '<br>';
@@ -56,7 +60,7 @@ echo $Mediterraneo->vitigno . '<br>';
 
 echo '<br>';
 
-$Felicità = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
+$Felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
 echo $Felicità->nazione . '<br>';
 echo $Felicità->regione . '<br>';
 echo $Felicità->zonaProduzione . '<br>';
@@ -81,9 +85,15 @@ class AziendaVinicola {
 }
 //End Creazione Nuova Classe
 
-//Creazione Oggetti Relativi a Classe AziendaVinicola
+//Creazione Oggetto Relativo a Classe AziendaVinicola
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
-var_dump($vinicolaAlbano);
 
+//Addizionamento di Oggetti Vino nell' oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola'
 $vinicolaAlbano->addVino($Platone);
-var_dump($vinicolaAlbano);  
+
+$vinicolaAlbano->addVino($Taras);
+
+$vinicolaAlbano->addVino($Mediterraneo);
+
+$vinicolaAlbano->addVino($Felicità);
+var_dump($vinicolaAlbano);
