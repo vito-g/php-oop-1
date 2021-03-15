@@ -85,15 +85,13 @@ class AziendaVinicola {
 }
 //End Creazione Nuova Classe
 
-//Creazione Oggetto Relativo a Classe AziendaVinicola
+//Creazione Oggetto Relativo a Classe AziendaVinicola attraverso la FX 'costruttore'
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
 
-//Addizionamento di Oggetti Vino nell' oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola'
+//Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola' attraverso la FX 'addVino'
 $vinicolaAlbano->addVino($Platone);
-
 $vinicolaAlbano->addVino($Taras);
-
 $vinicolaAlbano->addVino($Mediterraneo);
-
 $vinicolaAlbano->addVino($Felicità);
+//Stampa a schermo
 var_dump($vinicolaAlbano);
