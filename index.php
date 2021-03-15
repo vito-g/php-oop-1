@@ -41,32 +41,13 @@ $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Sal
 // echo '<br>';
 
 $taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
-// echo $taras->nazione . '<br>';
-// echo $taras->regione . '<br>';
-// echo $taras->zonaProduzione . '<br>';
-// echo $taras->indicazione . '<br>';
-// echo $taras->tipologia . '<br>';
-// echo $taras->vitigno . '<br>';
-
-// echo '<br>';
 
 $mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
-// echo $mediterraneo->nazione . '<br>';
-// echo $mediterraneo->regione . '<br>';
-// echo $mediterraneo->zonaProduzione . '<br>';
-// echo $mediterraneo->indicazione . '<br>';
-// echo $mediterraneo->tipologia . '<br>';
-// echo $mediterraneo->vitigno . '<br>';
-
-// echo '<br>';
 
 $felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
-// echo $felicità->nazione . '<br>';
-// echo $felicità->regione . '<br>';
-// echo $felicità->zonaProduzione . '<br>';
-// echo $felicità->indicazione . '<br>';
-// echo $felicità->tipologia . '<br>';
-// echo $felicità->vitigno . '<br>';
+
+
+
 
 
 //End Creazione Oggetti
