@@ -31,42 +31,42 @@ class Vino {
 
 //Creazione Oggetti
 $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
-echo $platone->nazione . '<br>';
-echo $platone->regione . '<br>';
-echo $platone->zonaProduzione . '<br>';
-echo $platone->indicazione . '<br>';
-echo $platone->tipologia . '<br>';
-echo $platone->vitigno . '<br>';
+// echo $platone->nazione . '<br>';
+// echo $platone->regione . '<br>';
+// echo $platone->zonaProduzione . '<br>';
+// echo $platone->indicazione . '<br>';
+// echo $platone->tipologia . '<br>';
+// echo $platone->vitigno . '<br>';
 
-echo '<br>';
+// echo '<br>';
 
 $taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
-echo $taras->nazione . '<br>';
-echo $taras->regione . '<br>';
-echo $taras->zonaProduzione . '<br>';
-echo $taras->indicazione . '<br>';
-echo $taras->tipologia . '<br>';
-echo $taras->vitigno . '<br>';
+// echo $taras->nazione . '<br>';
+// echo $taras->regione . '<br>';
+// echo $taras->zonaProduzione . '<br>';
+// echo $taras->indicazione . '<br>';
+// echo $taras->tipologia . '<br>';
+// echo $taras->vitigno . '<br>';
 
-echo '<br>';
+// echo '<br>';
 
 $mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
-echo $mediterraneo->nazione . '<br>';
-echo $mediterraneo->regione . '<br>';
-echo $mediterraneo->zonaProduzione . '<br>';
-echo $mediterraneo->indicazione . '<br>';
-echo $mediterraneo->tipologia . '<br>';
-echo $mediterraneo->vitigno . '<br>';
+// echo $mediterraneo->nazione . '<br>';
+// echo $mediterraneo->regione . '<br>';
+// echo $mediterraneo->zonaProduzione . '<br>';
+// echo $mediterraneo->indicazione . '<br>';
+// echo $mediterraneo->tipologia . '<br>';
+// echo $mediterraneo->vitigno . '<br>';
 
-echo '<br>';
+// echo '<br>';
 
 $felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
-echo $felicità->nazione . '<br>';
-echo $felicità->regione . '<br>';
-echo $felicità->zonaProduzione . '<br>';
-echo $felicità->indicazione . '<br>';
-echo $felicità->tipologia . '<br>';
-echo $felicità->vitigno . '<br>';
+// echo $felicità->nazione . '<br>';
+// echo $felicità->regione . '<br>';
+// echo $felicità->zonaProduzione . '<br>';
+// echo $felicità->indicazione . '<br>';
+// echo $felicità->tipologia . '<br>';
+// echo $felicità->vitigno . '<br>';
 
 
 //End Creazione Oggetti
