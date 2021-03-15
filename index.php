@@ -25,7 +25,6 @@ class Vino {
 }
 //End Creazione Classe
 
-
 //Creazione Oggetti
 $Platone = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 echo $Platone->nazione . '<br>';
@@ -85,3 +84,6 @@ class AziendaVinicola {
 //Creazione Oggetti Relativi a Classe AziendaVinicola
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
 var_dump($vinicolaAlbano);
+
+$vinicolaAlbano->addVino($Platone);
+var_dump($vinicolaAlbano);  
