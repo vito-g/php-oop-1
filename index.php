@@ -30,43 +30,45 @@ class Vino {
 //End Creazione Classe
 
 //Creazione Oggetti
-$Platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
-echo $Platone->nazione . '<br>';
-echo $Platone->regione . '<br>';
-echo $Platone->zonaProduzione . '<br>';
-echo $Platone->indicazione . '<br>';
-echo $Platone->tipologia . '<br>';
-echo $Platone->vitigno . '<br>';
+$platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
+echo $platone->nazione . '<br>';
+echo $platone->regione . '<br>';
+echo $platone->zonaProduzione . '<br>';
+echo $platone->indicazione . '<br>';
+echo $platone->tipologia . '<br>';
+echo $platone->vitigno . '<br>';
 
 echo '<br>';
 
-$Taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
-echo $Taras->nazione . '<br>';
-echo $Taras->regione . '<br>';
-echo $Taras->zonaProduzione . '<br>';
-echo $Taras->indicazione . '<br>';
-echo $Taras->tipologia . '<br>';
-echo $Taras->vitigno . '<br>';
+$taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
+echo $taras->nazione . '<br>';
+echo $taras->regione . '<br>';
+echo $taras->zonaProduzione . '<br>';
+echo $taras->indicazione . '<br>';
+echo $taras->tipologia . '<br>';
+echo $taras->vitigno . '<br>';
 
 echo '<br>';
 
-$Mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
-echo $Mediterraneo->nazione . '<br>';
-echo $Mediterraneo->regione . '<br>';
-echo $Mediterraneo->zonaProduzione . '<br>';
-echo $Mediterraneo->indicazione . '<br>';
-echo $Mediterraneo->tipologia . '<br>';
-echo $Mediterraneo->vitigno . '<br>';
+$mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
+echo $mediterraneo->nazione . '<br>';
+echo $mediterraneo->regione . '<br>';
+echo $mediterraneo->zonaProduzione . '<br>';
+echo $mediterraneo->indicazione . '<br>';
+echo $mediterraneo->tipologia . '<br>';
+echo $mediterraneo->vitigno . '<br>';
 
 echo '<br>';
 
-$Felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
-echo $Felicità->nazione . '<br>';
-echo $Felicità->regione . '<br>';
-echo $Felicità->zonaProduzione . '<br>';
-echo $Felicità->indicazione . '<br>';
-echo $Felicità->tipologia . '<br>';
-echo $Felicità->vitigno . '<br>';
+$felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
+echo $felicità->nazione . '<br>';
+echo $felicità->regione . '<br>';
+echo $felicità->zonaProduzione . '<br>';
+echo $felicità->indicazione . '<br>';
+echo $felicità->tipologia . '<br>';
+echo $felicità->vitigno . '<br>';
+
+
 //End Creazione Oggetti
 
 //Creazione Nuova Classe
@@ -89,10 +91,10 @@ class AziendaVinicola {
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
 
 //Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola' attraverso la FX 'addVino'
-$vinicolaAlbano->addVino($Platone);
-$vinicolaAlbano->addVino($Taras);
-$vinicolaAlbano->addVino($Mediterraneo);
-$vinicolaAlbano->addVino($Felicità);
+$vinicolaAlbano->addVino($platone);
+$vinicolaAlbano->addVino($taras);
+$vinicolaAlbano->addVino($mediterraneo);
+$vinicolaAlbano->addVino($felicità);
 //Stampa a schermo
 var_dump($vinicolaAlbano);
 
