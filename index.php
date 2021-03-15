@@ -68,6 +68,13 @@ class AziendaVinicola {
   public function addVino($vino) {
     $this->vini[] = $vino;
   }
+
+  public function getNomeVini() {
+    echo 'I vini dell\' ' . '<b>' . $this->nome . '</b> sono: <br>' ;
+    for ($i = 0 ; $i < count($this->vini); ++$i) {
+      print_r('<ul><li>' . $this->vini[$i]->nome . '</li></ul>');
+    }
+  }
 }
 //End Creazione Nuova Classe
 
@@ -91,3 +98,5 @@ $lArchetipo->addVino($grecoBianco);
 
 //Stampa a schermo
 var_dump($lArchetipo);
+$lArchetipo->getNomeVini();
+$vinicolaAlbano->getNomeVini();
