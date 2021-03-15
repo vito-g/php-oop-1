@@ -1,6 +1,6 @@
 <?php
 
-//Creazione Classe
+//Creazione Classe Vino
 class Vino {
 
   public $nome;
@@ -27,7 +27,7 @@ class Vino {
     $this->vitigno = $vitigno;
   }
 }
-//End Creazione Classe
+//End Creazione Classe Vino
 
 //Creazione Oggetti di Classe Vino  (attraverso la FX 'costruttore')
 $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
@@ -37,25 +37,19 @@ $platone = new Vino('Platone', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Sal
 // echo $platone->indicazione . '<br>';
 // echo $platone->tipologia . '<br>';
 // echo $platone->vitigno . '<br>';
-
 // echo '<br>';
-
 $taras = new Vino('Taras', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
-
 $mediterraneo = new Vino('Mediterraneo', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosato', 'Negramaro');
-
 $felicità = new Vino('Felicità', 'Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Bianco', '70% Sauvignon 30% Chardonnay');
-
 $mistico = new Vino('Mistico', 'Italia', 'Puglia', 'Castellaneta Marina', 'IGP Salento', 'Vino Rosso', 'Primitivo');
-
 $niuruMaru = new Vino('Niuru Maru', 'Italia', 'Puglia', 'Castellaneta Marina', 'IGP Salento', 'Vino Rosso', 'Negroamaro');
-
 $verdecaSetteLune = new Vino('Verdeca Sette Lune', 'Italia', 'Puglia','Castellaneta Marina', 'IGP Salento', 'Vino Bianco', 'Verdeca');
-
 $grecoBianco = new Vino('Greco Bianco', 'Italia', 'Puglia','Castellaneta Marina', 'IGP Salento', 'Vino Bianco', 'Greco Bianco');
 //End Creazione Oggetti di Classe Vino
 
-//Creazione Nuova Classe
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+//Creazione Classe AziendaVinicola
 class AziendaVinicola {
   public $nome;
 
@@ -76,27 +70,29 @@ class AziendaVinicola {
     }
   }
 }
-//End Creazione Nuova Classe
+//End Creazione Classe AziendaVinicola
 
 //Creazione Oggetti di Classe AziendaVinicola (attraverso la FX 'costruttore')
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
-//Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola ALbano' di Classe 'AziendaVinicola' (attraverso la FX 'addVino')
+$lArchetipo = new AziendaVinicola('Azienda Vinicola l\'Archetipo');
+//End Creazione Oggetti di Classe AziendaVinicola
+
+// -------------------------------------------------------------------------------------------------------------
+
+//Addizionamento di Oggetti Vino negli Oggetti di Classe 'AziendaVinicola' (attraverso la FX 'addVino')
 $vinicolaAlbano->addVino($platone);
 $vinicolaAlbano->addVino($taras);
 $vinicolaAlbano->addVino($mediterraneo);
 $vinicolaAlbano->addVino($felicità);
-//Stampa a schermo
-var_dump($vinicolaAlbano);
-
-//Creazione Nuovo Oggetto Relativo a Classe AziendaVinicola attraverso la FX 'costruttore'
-$lArchetipo = new AziendaVinicola('Azienda Vinicola l\'Archetipo');
-//Addizionamento di Oggetti Vino nell' Oggetto 'Azienda Vinicola l'Archetipo' di Classe 'AziendaVinicola' (attraverso la FX 'addVino')
 $lArchetipo->addVino($mistico);
 $lArchetipo->addVino($niuruMaru);
 $lArchetipo->addVino($verdecaSetteLune);
 $lArchetipo->addVino($grecoBianco);
+//End Addizionamento di Oggetti Vino negli Oggetti di Classe 'AziendaVinicola'
 
 //Stampa a schermo
+var_dump($vinicolaAlbano);
+$vinicolaAlbano->getNomeVini();
 var_dump($lArchetipo);
 $lArchetipo->getNomeVini();
-$vinicolaAlbano->getNomeVini();
+//End Stampa a schermo
