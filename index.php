@@ -30,3 +30,13 @@ echo $Platone->zonaProduzione . '<br>';
 echo $Platone->indicazione . '<br>';
 echo $Platone->tipologia . '<br>';
 echo $Platone->vitigno . '<br>';
+
+echo '<br>';
+
+$Taras = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', 'Primitivo');
+echo $Taras->nazione . '<br>';
+echo $Taras->regione . '<br>';
+echo $Taras->zonaProduzione . '<br>';
+echo $Taras->indicazione . '<br>';
+echo $Taras->tipologia . '<br>';
+echo $Taras->vitigno . '<br>';
