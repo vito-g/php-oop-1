@@ -95,3 +95,8 @@ $vinicolaAlbano->addVino($Mediterraneo);
 $vinicolaAlbano->addVino($Felicità);
 //Stampa a schermo
 var_dump($vinicolaAlbano);
+
+//Creazione Nuovo Oggetto Relativo a Classe AziendaVinicola attraverso la FX 'costruttore'
+$lArchetipo = new AziendaVinicola('Azienda Vinicola l\'Archetipo');
+//Stampa a schermo
+var_dump($lArchetipo);
