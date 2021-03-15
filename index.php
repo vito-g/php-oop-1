@@ -1,5 +1,6 @@
 <?php
 
+//Creazione Classe
 class Vino {
   public $nazione;
 
@@ -22,7 +23,10 @@ class Vino {
     $this->vitigno = $vitigno;
   }
 }
+//End Creazione Classe
 
+
+//Creazione Oggetti
 $Platone = new Vino('Italia', 'Puglia', 'Cellino San Marco', 'IGP Salento', 'Vino Rosso', '50% Primitivo 50% Negroamaro');
 echo $Platone->nazione . '<br>';
 echo $Platone->regione . '<br>';
@@ -60,8 +64,9 @@ echo $Felicità->zonaProduzione . '<br>';
 echo $Felicità->indicazione . '<br>';
 echo $Felicità->tipologia . '<br>';
 echo $Felicità->vitigno . '<br>';
+//End Creazione Oggetti
 
-
+//Creazione Nuova Classe
 class AziendaVinicola {
   public $nome;
 
@@ -75,6 +80,8 @@ class AziendaVinicola {
     $this->vini[] = $vino;
   }
 }
+//End Creazione Nuova Classe
 
+//Creazione Oggetti Relativi a Classe AziendaVinicola
 $vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
 var_dump($vinicolaAlbano);
