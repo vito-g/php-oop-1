@@ -49,8 +49,8 @@ $grecoBianco = new Vino('Greco Bianco', 'Italia', 'Puglia','Castellaneta Marina'
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
-//Creazione Classe AziendaVinicola
-class AziendaVinicola {
+//Creazione Classe AziendaVinicolaPugliese
+class AziendaVinicolaPugliese {
   public $nome;
 
   public $vini = [];
@@ -70,11 +70,11 @@ class AziendaVinicola {
     }
   }
 }
-//End Creazione Classe AziendaVinicola
+//End Creazione Classe AziendaVinicolaPugliese
 
-//Creazione Oggetti di Classe AziendaVinicola (attraverso la FX 'costruttore')
-$vinicolaAlbano = new AziendaVinicola('Azienda Vinicola Albano');
-$lArchetipo = new AziendaVinicola('Azienda Vinicola l\'Archetipo');
+//Creazione Oggetti di Classe AziendaVinicolaPugliese (attraverso la FX 'costruttore')
+$vinicolaAlbano = new AziendaVinicolaPugliese('Azienda Vinicola Albano');
+$lArchetipo = new AziendaVinicolaPugliese('Azienda Vinicola l\'Archetipo');
 //End Creazione Oggetti di Classe AziendaVinicola
 
 // -------------------------------------------------------------------------------------------------------------
